@@ -267,10 +267,228 @@ body {
 
 .payment-icons i {
   font-size: 2rem;
-  margin-right: 10px;
+  margin-right: 10px;}
+/* }
+contact page css */
+
+
+.bimage {
+  background-image: url("pic1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Page Name CSS ENDS HERE */
+
+
+/* 
+
+.div1 {
+  color: white;
+  text-align: center;
+  max-width: 800px;
+  padding: 20px;
+  background-color: rgba(27, 27, 27, 0.6);
+  border-radius: 10px;
+}
+ */
+h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.5rem;
+  color: rgb(251, 247, 247);
+}
+
+.icon-container {
+  transition: transform 0.3s ease;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icon-container:hover {
+  transform: translateY(-5px);
+}
+
+.icon-wrapper {
+  margin-bottom: 20px;
+}
+
+.icon-wrapper svg {
+  width: 50px;
+  height: 50px;
+  color: #007bff;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.p1{
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+.p2 {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.phone-number a {
+  display: inline-block;
+  margin: 5px 0;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.phone-number a:hover {
+  color: #0056b3;
+}
+
+.p3 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 40px 0;
+  color: #333;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+iframe {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .p3 {
+    font-size: 2rem;
+  }
+}
+
+.animate-text {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.p4{
+  font-size: 2.5rem;
+  color: #333;
+  text-align:center ;
+}
+.map-container2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 40px 0;
+  margin-left: 20px;
+}
+
+.map-container2 iframe  {
+  width: 450px;
+  height: 450px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-box2 {
+  width: 200px;
+  height: 450px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  border: 1px solid aliceblue ;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.info-box2 h3 {
+font-size: 35px;
+margin-bottom: 10px;
+}
+
+.info-box2 p {
+font-size: 20px;
+margin-bottom: 10px;
+}
+
+.info-box2 a {
+font-size: 20px;
+text-decoration: none;
+color: #007bff;
+}
+/* contact page cs Starts here */
+.yahya-background-section {
+  position: relative;
+  height: 100vh;
+  background-image: url('imgs/pic1.jpg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+}
+
+.yahya-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent overlay */
+}
+
+.yahya-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.yahya-h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.yahya-p {
+  font-size: 1.2rem;
+}
+
+/* contact page CSS ENDS HERE */
 
 /* Write CSS HERE */
 
