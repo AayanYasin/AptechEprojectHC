@@ -452,6 +452,153 @@ font-size: 20px;
 text-decoration: none;
 color: #007bff;
 }
+/* contact page cs end here */
+/* Page Name CSS ENDS HERE */
+}
+
+.icon-container {
+  transition: transform 0.3s ease;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icon-container:hover {
+  transform: translateY(-5px);
+}
+
+.icon-wrapper {
+  margin-bottom: 20px;
+}
+
+.icon-wrapper svg {
+  width: 50px;
+  height: 50px;
+  color: #007bff;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.p1{
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+.p2 {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.phone-number a {
+  display: inline-block;
+  margin: 5px 0;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.phone-number a:hover {
+  color: #0056b3;
+}
+
+.p3 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 40px 0;
+  color: #333;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+iframe {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .p3 {
+    font-size: 2rem;
+  }
+}
+
+.animate-text {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.p4{
+  font-size: 2.5rem;
+  color: #333;
+  text-align:center ;
+}
+.map-container2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 40px 0;
+  margin-left: 20px;
+}
+
+.map-container2 iframe  {
+  width: 450px;
+  height: 450px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-box2 {
+  width: 200px;
+  height: 450px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  border: 1px solid aliceblue ;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.info-box2 h3 {
+font-size: 35px;
+margin-bottom: 10px;
+}
+
+.info-box2 p {
+font-size: 20px;
+margin-bottom: 10px;
+}
+
+.info-box2 a {
+font-size: 20px;
+text-decoration: none;
+color: #007bff;
+}
 
 
 /* contact page cs Starts here */
