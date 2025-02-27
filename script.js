@@ -62,3 +62,17 @@ window.addEventListener('scroll', () => {
       dropdownMenu.addEventListener('mouseleave', closeDropdown);
     }
   });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const iconContainers = document.querySelectorAll(".icon-container")
+  
+    iconContainers.forEach((container) => {
+      container.addEventListener("mouseenter", () => {
+        container.style.backgroundColor = "#e9ecef"
+      })
+  
+      container.addEventListener("mouseleave", () => {
+        container.style.backgroundColor = "#f8f9fa"
+      })
+    })
+  })

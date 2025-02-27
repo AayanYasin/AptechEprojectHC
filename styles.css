@@ -454,6 +454,548 @@ color: #007bff;
 }
 /* contact page cs end here */
 /* Page Name CSS ENDS HERE */
+}
+
+.icon-container {
+  transition: transform 0.3s ease;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icon-container:hover {
+  transform: translateY(-5px);
+}
+
+.icon-wrapper {
+  margin-bottom: 20px;
+}
+
+.icon-wrapper svg {
+  width: 50px;
+  height: 50px;
+  color: #007bff;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.p1{
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+.p2 {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.phone-number a {
+  display: inline-block;
+  margin: 5px 0;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.phone-number a:hover {
+  color: #0056b3;
+}
+
+.p3 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 40px 0;
+  color: #333;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+iframe {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .p3 {
+    font-size: 2rem;
+  }
+}
+
+.animate-text {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.p4{
+  font-size: 2.5rem;
+  color: #333;
+  text-align:center ;
+}
+.map-container2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 40px 0;
+  margin-left: 20px;
+}
+
+.map-container2 iframe  {
+  width: 450px;
+  height: 450px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-box2 {
+  width: 200px;
+  height: 450px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  border: 1px solid aliceblue ;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.info-box2 h3 {
+font-size: 35px;
+margin-bottom: 10px;
+}
+
+.info-box2 p {
+font-size: 20px;
+margin-bottom: 10px;
+}
+
+.info-box2 a {
+font-size: 20px;
+text-decoration: none;
+color: #007bff;
+}
+
+
+/* contact page cs Starts here */
+.yahya-background-section {
+  position: relative;
+  height: 100vh;
+  background-image: url('imgs/pic1.jpg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+}
+
+.yahya-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent overlay */
+}
+
+.yahya-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.yahya-h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.yahya-p {
+  font-size: 1.2rem;
+}
+
+.yahya-container-fluid {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+}
+
+.yahya-card {
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.yahya-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.yahya-icon-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.yahya-icon-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.yahya-icon-wrapper svg {
+  width: 35px !important;
+  color: #000000 !important;
+  margin-bottom: 20px;
+}
+
+.yahya-h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.yahya-p1,
+.yahya-p2 {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.yahya-phone-number a {
+  display: inline-block;
+  margin: 5px 0;
+  font-size: 1.2rem;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.yahya-phone-number a:hover {
+  color: #0056b3;
+}
+
+.yahya-p3 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin: 40px 0;
+}
+
+.yahya-map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.yahya-iframe {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.yahya-icon-container {
+  width: 100%;
+  max-width: 500px;
+}
+
+@media (max-width: 768px) {
+  .yahya-h3 {
+    font-size: 1.5rem;
+  }
+
+  .yahya-p1,
+  .yahya-p2 {
+    font-size: 1.1rem;
+  }
+
+  .yahya-p3 {
+    font-size: 2rem;
+  }
+
+  .yahya-icon-container {
+    max-width: 90%;
+    padding: 30px;
+  }
+}
+
+.yahya-animate-text {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.yahya-map-container iframe {
+  width: 100%;
+  max-width: 1000px;
+  height: 450px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section Container */
+.yahya-contact-section {
+  padding: 60px 30px;
+  margin-top: 50px;
+  border-radius: 12px;
+  background-color: #ffffff; /* Simple white background */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f1f1f1; /* Soft border for subtle separation */
+}
+
+/* Title of Contact Form */
+.yahya-form-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  color: #333;
+  text-align: center; /* Center align the form title */
+}
+
+/* Description under Contact Form Title */
+.yahya-form-description {
+  font-size: 1.3rem;
+  color: #777;
+  margin-bottom: 30px;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Form Input Fields Styling */
+.yahya-form-group {
+  margin-bottom: 20px; 
+  text-align: left;
+}
+
+.yahya-form-label {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.yahya-form-input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fafafa; /* Light background for inputs */
+  color: #333;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.yahya-form-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 12px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit Button Styling */
+.yahya-form-submit {
+  font-size: 1.2rem;
+  padding: 14px 30px;
+  border-radius: 50px;
+  background-color: #007bff;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.yahya-form-submit:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Separator Styling */
+.yahya-separator {
+  width: 100%;
+  border-top: 2px solid #eee;
+  margin: 40px 0;
+}
+
+/* Right Column: Opening Hours */
+.yahya-opening-hours-column {
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #fafafa; /* Light gray background */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.yahya-hours-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* List of Opening Hours */
+.yahya-hours-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.yahya-hours-item {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.yahya-hours-day {
+  font-weight: bold;
+  color: #007bff;
+  margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .yahya-contact-form-column,
+  .yahya-opening-hours-column {
+      margin-bottom: 30px;
+  }
+
+  .yahya-form-title {
+      font-size: 2.4rem;
+  }
+
+  .yahya-hours-title {
+      font-size: 2.2rem;
+  }
+
+  .yahya-form-submit {
+      font-size: 1.1rem;
+      padding: 12px 28px;
+  }
+}
+
+
+
+
+
+/* Gallery Page CSS Starts Here */
+.saad-background-section {
+  position: relative;
+  height: 100vh;
+  background-image: url('imgs/pic1.jpg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+}
+
+.saad-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent overlay */
+}
+
+.saad-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.saad-h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.saad-p {
+  font-size: 1.2rem;
+}
+
+.saad-gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px; /* Optional: rounded corners */
+}
+
+.saad-gallery-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.saad-gallery-item:hover img {
+  filter: blur(5px); /* Blur effect */
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Description styling */
+.saad-gallery-item .saad-description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  width: 90%;
+  text-align: center;
+}
+
+.saad-gallery-item:hover .saad-description {
+  opacity: 1; /* Show description on hover */
+}
+
+/* Optional: Style the container for the gallery */
+.saad-gallery-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+/* Gallery Page CSS Ends Here */
+
+/* contact page CSS ENDS HERE */
 
 /* Write CSS HERE */
 
