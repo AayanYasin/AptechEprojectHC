@@ -970,13 +970,165 @@ color: #007bff;
 
 /* About Us Page CSS STARTS HERE */
 
-.waqas-background-section {
+.wakas-background-section {
   position: relative;
   height: 100vh;
   background-image: url('imgs/pic1.jpg'); /* Replace with your image */
   background-size: cover;
   background-position: center;
 }
+
+/* Section Header */
+.wakas-section-header {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Section Content */
+.wakas-section-content {
+  font-size: 1.15rem;
+  color: #34495e;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  text-align: justify;
+  text-justify: inter-word;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+/* Branch Cards */
+.wakas-branch-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 5px solid #2c3e50;
+  background: linear-gradient(135deg, #ffffff, #f8f8f8);
+}
+
+.wakas-branch-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.wakas-branch-card h5 {
+  font-size: 1.7rem;
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wakas-branch-card p {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin-top: 10px;
+  line-height: 1.5;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+/* Alternating Backgrounds */
+#our-story {
+  background-color: #ffffff;
+  padding: 60px 3%;
+}
+
+#our-policy {
+  background-color: #f9f9f9;
+  padding: 60px 3%;
+}
+
+#our-core-values {
+  background-color: #ffffff;
+  padding: 60px 3%;
+}
+
+#our-branches {
+  background-color: #f4f4f4;
+  padding: 60px 3%;
+}
+
+/* Company Representatives Section */
+#wakas-representatives {
+  background-color: #ffffff;
+  padding: 60px 0%;
+}
+
+.wakas-representative-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wakas-representative-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.wakas-representative-img {
+  width: 100%;
+  max-width: 160px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.wakas-representative-card h5 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+.wakas-representative-card p {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .wakas-representative-card {
+    padding: 15px;
+  }
+
+  .wakas-representative-card h5 {
+    font-size: 1.4rem;
+  }
+
+  .wakas-representative-card p {
+    font-size: 1rem;
+  }
+
+  .wakas-section-header {
+    font-size: 2rem;
+  }
+
+  .wakas-section-content {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+}
+
+section {
+  height: auto;
+  padding: 60px 0%;
+  margin-bottom: 30px;
+}
+
+
+
 
 /* About Us Page CSS ENDS HERE */
 
