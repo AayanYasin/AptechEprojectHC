@@ -152,6 +152,33 @@ body {
   transform: scale(1.2);
 }
 
+.global-overlay-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent overlay */
+}
+
+.global-overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.global-overlay-h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.global-overlay-p {
+  font-size: 1.2rem;
+}
+
 /* HOME PAGE CSS STARTS HERE */
 /* Carousel */
 .carousel-section {
@@ -454,7 +481,6 @@ color: #007bff;
 }
 /* contact page cs end here */
 /* Page Name CSS ENDS HERE */
-}
 
 .icon-container {
   transition: transform 0.3s ease;
@@ -602,39 +628,13 @@ color: #007bff;
 
 
 /* contact page cs Starts here */
+
 .yahya-background-section {
   position: relative;
   height: 100vh;
-  background-image: url('imgs/pic1.jpg'); /* Replace with your image */
+  background-image: url('imgs/pic1.jpg'); 
   background-size: cover;
   background-position: center;
-}
-
-.yahya-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent overlay */
-}
-
-.yahya-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-}
-
-.yahya-h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-.yahya-p {
-  font-size: 1.2rem;
 }
 
 .yahya-container-fluid {
@@ -911,44 +911,17 @@ color: #007bff;
   }
 }
 
-
-
+/* Contact Page CSS ENDS Here */
 
 
 /* Gallery Page CSS Starts Here */
+
 .saad-background-section {
   position: relative;
   height: 100vh;
   background-image: url('imgs/pic1.jpg'); /* Replace with your image */
   background-size: cover;
   background-position: center;
-}
-
-.saad-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent overlay */
-}
-
-.saad-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-}
-
-.saad-h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-.saad-p {
-  font-size: 1.2rem;
 }
 
 .saad-gallery-item {
@@ -995,10 +968,17 @@ color: #007bff;
 }
 /* Gallery Page CSS Ends Here */
 
-/* contact page CSS ENDS HERE */
+/* About Us Page CSS STARTS HERE */
 
-/* Write CSS HERE */
+.waqas-background-section {
+  position: relative;
+  height: 100vh;
+  background-image: url('imgs/pic1.jpg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+}
 
-/* Page Name ENDS HERE */
+/* About Us Page CSS ENDS HERE */
+
 
 /* Create a new comment with page name above this comment and write css code within your area, edit others code if you feel any improvements */
