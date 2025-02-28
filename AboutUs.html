@@ -32,7 +32,7 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            <a class="nav-link dropdown-toggle" href="ProductsPage01.html" id="navbarDropdown" role="button"
               data-bs-toggle="dropdown">Products</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">Product 1</a></li>
@@ -72,12 +72,15 @@
         <h1 class="global-overlay-h1">About Us</h1>
         <p class="global-overlay-p">Welcome to our About Us page where you get to know us better!</p>
     </div>
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
   </section>
 
    <!-- Our Story Section -->
 <section id="our-story" class="wakas-container mt-5">
   <h2 class="wakas-section-header">Our Story</h2>
-  <p class="wakas-section-content">Wakas Handicrafts was founded with the vision of preserving and promoting the
+  <p class="wakas-section-content">Handicrafts was founded with the vision of preserving and promoting the
     timeless artistry of handmade crafts. Our journey began in a small workshop where we gathered artisans who
     shared our passion for craftsmanship. Today, we have become a symbol of quality and creativity, offering
     unique and beautifully crafted products that tell stories of culture and tradition.</p>
@@ -86,7 +89,7 @@
 <!-- Our Policy Section -->
 <section id="our-policy" class="wakas-container mt-5">
   <h2 class="wakas-section-header">Our Policy</h2>
-  <p class="wakas-section-content">At Wakas Handicrafts, we are committed to providing our customers with
+  <p class="wakas-section-content">At Handicrafts, we are committed to providing our customers with
     high-quality, ethically sourced products. Our policy is built on the principles of integrity, sustainability,
     and respect for traditional artisanship. We ensure that every product meets the highest standards of
     craftsmanship and is made in a way that respects both the environment and the artisans who create them.</p>
@@ -109,29 +112,29 @@
 
 <!-- Story of Our 3 Branches Section -->
 <section id="our-branches" class="wakas-container mt-5">
-  <h2 class="wakas-section-header">Our 3 Branches</h2>
+  <h2 class="wakas-section-header">Our Branches</h2>
 
   <div class="row">
     <div class="col-md-4">
       <div class="wakas-branch-card">
-        <h5>Branch 1: Wakas Artisan Center</h5>
-        <p>Located in the heart of the city, Wakas Artisan Center is our flagship branch, showcasing a wide
+        <h5>Branch 1: Artisan Center</h5>
+        <p>Located in the heart of the city, Our Artisan Center is our flagship branch, showcasing a wide
           range of handcrafted items. Here, we collaborate with local artisans to bring their beautiful
           creations to the world.</p>
       </div>
     </div>
     <div class="col-md-4">
       <div class="wakas-branch-card">
-        <h5>Branch 2: Wakas Craft Gallery</h5>
-        <p>The Wakas Craft Gallery is a space dedicated to the display and sale of exclusive, high-end
+        <h5>Branch 2: Craft Gallery</h5>
+        <p>The Craft Gallery is a space dedicated to the display and sale of exclusive, high-end
           handicrafts. It serves as a platform for talented artists to exhibit their work and connect with
           art lovers.</p>
       </div>
     </div>
     <div class="col-md-4">
       <div class="wakas-branch-card">
-        <h5>Branch 3: Wakas Workshop</h5>
-        <p>Our Wakas Workshop is where all the magic happens. Located in a serene area, it is where we
+        <h5>Branch 3: Workshop</h5>
+        <p>Our Workshop is where all the magic happens. Located in a serene area, it is where we
           produce and refine our handcrafted products. The workshop is a place of creativity and
           collaboration between designers and artisans.</p>
       </div>
@@ -147,7 +150,7 @@
     <div class="col-md-2 col-6">
       <div class="wakas-representative-card">
         <img src="representative1.jpg" alt="Representative 1" class="wakas-representative-img">
-        <h5>John Doe</h5>
+        <h5>Aayan Yasin</h5>
         <p>CEO</p>
       </div>
     </div>
@@ -155,7 +158,7 @@
     <div class="col-md-2 col-6">
       <div class="wakas-representative-card">
         <img src="representative2.jpg" alt="Representative 2" class="wakas-representative-img">
-        <h5>Jane Smith</h5>
+        <h5>Saad Bhai</h5>
         <p>COO</p>
       </div>
     </div>
@@ -163,7 +166,7 @@
     <div class="col-md-2 col-6">
       <div class="wakas-representative-card">
         <img src="representative3.jpg" alt="Representative 3" class="wakas-representative-img">
-        <h5>Michael Lee</h5>
+        <h5>Hussain Bhai</h5>
         <p>CFO</p>
       </div>
     </div>
@@ -171,7 +174,7 @@
     <div class="col-md-2 col-6">
       <div class="wakas-representative-card">
         <img src="representative4.jpg" alt="Representative 4" class="wakas-representative-img">
-        <h5>Emily Davis</h5>
+        <h5>Yahya Bhai</h5>
         <p>CMO</p>
       </div>
     </div>
@@ -179,14 +182,23 @@
     <div class="col-md-2 col-6">
       <div class="wakas-representative-card">
         <img src="representative5.jpg" alt="Representative 5" class="wakas-representative-img">
-        <h5>David Johnson</h5>
+        <h5>Waqas Bhai</h5>
         <p>CTO</p>
       </div>
     </div>
   </div>
 </section>
 
-
+<!-- Add to Cart Drawer -->
+<div class="hussain-cart-drawer">
+  <div class="hussain-cart-header">
+    <h3>Your Cart</h3>
+    <button class="hussain-close-drawer">&times;</button>
+  </div>
+  <div class="hussain-cart-items">
+    <!-- Cart items will be dynamically inserted here -->
+  </div>
+</div>
 
   <!-- Footer -->
   <footer class="footer py-5 bg-dark text-white">
@@ -195,10 +207,11 @@
         <div class="col-md-4">
           <h5>Quick Links</h5>
           <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Home</a></li>
-            <li><a href="#" class="text-white">Products</a></li>
-            <li><a href="#" class="text-white">About Us</a></li>
-            <li><a href="#" class="text-white">Contact Us</a></li>
+            <li><a href="index.html" class="text-white">Home</a></li>
+            <li><a href="ProductsPage01.html" class="text-white">Products</a></li>
+            <li><a href="AboutUs.html" class="text-white">About Us</a></li>
+            <li><a href="ContactUs.html" class="text-white">Contact Us</a></li>
+            <li><a href="Gallery.html" class="text-white">Gallery</a></li>
           </ul>
         </div>
         <div class="col-md-4">
@@ -213,7 +226,7 @@
         <div class="col-md-4">
           <h5>Contact Us</h5>
           <p>Email: info@handicraftstore.com</p>
-          <p>Phone: +123 456 7890</p>
+          <p>Phone: +92 332 5242409</p>
         </div>
       </div>
     </div>

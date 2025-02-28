@@ -32,7 +32,7 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            <a class="nav-link dropdown-toggle" href="ProductsPage01.html" id="navbarDropdown" role="button"
               data-bs-toggle="dropdown">Products</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">Product 1</a></li>
@@ -65,13 +65,52 @@
   * Edit Css In respecting sections
   * Use comprehensive Comments
   -->
-  <section class="global-overlay-background-section">
+  <section class="hussain-background-section">
     <div class="global-overlay-overlay"></div>
     <div class="global-overlay-content">
-        <h1 class="global-overlay-h1">Contact Us</h1>
-        <p class="global-overlay-p">Get in touch with us! We'd love to hear from you.</p>
+        <h1 class="global-overlay-h1">Product 01</h1>
+        <p class="global-overlay-p">Discover our premium range of Product 01 collection.</p>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
     </div>
   </section>
+
+
+  <!-- Filter Section -->
+  <section class="hussain-filter-section py-4 bg-light">
+    <div class="container">
+      <label for="hussain-price-filter" class="form-label">Filter by Price:</label>
+      <select id="hussain-price-filter" class="form-select">
+        <option value="all">All</option>
+        <option value="0-50">Under Rs.50</option>
+        <option value="50-100">Rs.50 - Rs.100</option>
+        <option value="100-200">Rs.100 - Rs.200</option>
+        <option value="200+">Above Rs.200</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- Products Grid -->
+  <section class="hussain-products-section py-5">
+    <div class="container">
+      <div class="row" id="hussain-products-grid">
+        <!-- Product cards will be dynamically inserted here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Add to Cart Drawer -->
+  <div class="hussain-cart-drawer">
+    <div class="hussain-cart-header">
+      <h3>Your Cart</h3>
+      <button class="hussain-close-drawer">&times;</button>
+    </div>
+    <div class="hussain-cart-items">
+      <!-- Cart items will be dynamically inserted here -->
+    </div>
+  </div>
+
 
 
   <!-- Footer -->
@@ -81,10 +120,11 @@
         <div class="col-md-4">
           <h5>Quick Links</h5>
           <ul class="list-unstyled">
-            <li><a href="#" class="text-white">Home</a></li>
-            <li><a href="#" class="text-white">Products</a></li>
-            <li><a href="#" class="text-white">About Us</a></li>
-            <li><a href="#" class="text-white">Contact Us</a></li>
+            <li><a href="index.html" class="text-white">Home</a></li>
+            <li><a href="ProductsPage01.html" class="text-white">Products</a></li>
+            <li><a href="AboutUs.html" class="text-white">About Us</a></li>
+            <li><a href="ContactUs.html" class="text-white">Contact Us</a></li>
+            <li><a href="Gallery.html" class="text-white">Gallery</a></li>
           </ul>
         </div>
         <div class="col-md-4">
@@ -99,7 +139,7 @@
         <div class="col-md-4">
           <h5>Contact Us</h5>
           <p>Email: info@handicraftstore.com</p>
-          <p>Phone: +123 456 7890</p>
+          <p>Phone: +92 332 5242409</p>
         </div>
       </div>
     </div>
