@@ -1000,7 +1000,7 @@ color: #007bff;
   font-family: 'Georgia', 'Times New Roman', serif;
   text-align: justify;
   text-justify: inter-word;
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
   border-radius: 8px;
   padding: 30px;
 }
