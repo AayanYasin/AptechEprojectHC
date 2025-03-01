@@ -1296,4 +1296,200 @@ section {
 
 /* Products Page CSS ENDS Here */
 
+/* Checkout Page CSS STARTS here */
+/* Styles specific to the checkout page */
+.aayan-background-section {
+  position: relative;
+  height: calc(100vh - 30px);
+  background-image: url('imgs/pic1.jpg'); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+}
+
+.aayan-checkout-page {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.aayan-checkout-page .aayan-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 600px; /* Increased width */
+  width: 100%;
+  margin: 20px; /* Add margin for spacing */
+}
+
+.aayan-checkout-page .aayan-title {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.aayan-checkout-page .aayan-summary {
+  margin-bottom: 2rem;
+}
+
+.aayan-checkout-page .aayan-summary-title {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.aayan-checkout-page .aayan-products {
+  margin-bottom: 1.5rem;
+}
+
+.aayan-checkout-page .aayan-product-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically */
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.aayan-checkout-page .aayan-product-name {
+  font-size: 1rem;
+  color: #333;
+}
+
+.aayan-checkout-page .aayan-product-price {
+  font-size: 1rem;
+  color: #777;
+}
+
+.aayan-checkout-page .aayan-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  padding-top: 1rem;
+}
+
+.aayan-checkout-page .aayan-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.aayan-checkout-page .aayan-form-title {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.aayan-checkout-page .aayan-form-group {
+  margin-bottom: 1rem;
+}
+
+.aayan-checkout-page .aayan-label {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.aayan-checkout-page .aayan-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.aayan-checkout-page .aayan-input[type="text"] {
+  height: auto; /* Ensure text inputs are properly sized */
+}
+
+.aayan-checkout-page .aayan-input[type="textarea"] {
+  resize: vertical; /* Allow vertical resizing for textarea */
+}
+
+.aayan-checkout-page .aayan-submit-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.aayan-checkout-page .aayan-submit-button:hover {
+  background-color: #0056b3;
+}
+
+.aayan-checkout-page .aayan-submit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.aayan-checkout-page .aayan-error {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  display: none;
+}
+/* Checkout Page CSS ENDS here */
+
+/* Thankyou page CSS STARTS head */
+
+/* Thank You Container */
+.thank-you-container {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto; /* Center the container */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center vertically and horizontally */
+}
+
+/* Thank You Title */
+.thank-you-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Thank You Message */
+.thank-you-message {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* Thank You Button */
+.thank-you-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.thank-you-button:hover {
+  background-color: #0056b3;
+}
+/* Thankyou page CSS ENDS head */
+
 /* Create a new comment with page name above this comment and write css code within your area, edit others code if you feel any improvements */

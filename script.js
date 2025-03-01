@@ -70,7 +70,7 @@ function renderCartItems() {
 
     if (checkoutButton) {
       checkoutButton.addEventListener('click', () => {
-        alert('Proceeding to checkout...'); // Replace with actual checkout logic
+        window.location.href = 'checkout.html'; // Redirect to checkout page
       });
     }
 
@@ -156,6 +156,116 @@ function updateCartBadge() {
   }
 }
 
+// ==================== Checkout Page Logic ====================
+
+// Render cart items on the checkout page
+function renderCheckoutItems() {
+  const productsContainer = document.getElementById('aayan-products');
+  const totalAmountElement = document.getElementById('aayan-total-amount');
+
+  if (productsContainer) {
+    productsContainer.innerHTML = ''; // Clear the container
+    let total = 0; // Initialize total price
+
+    // Loop through cart items and render them
+    cart.forEach(item => {
+      const itemTotal = item.price * item.quantity; // Calculate item total
+      total += itemTotal; // Add to overall total
+
+      const cartItem = `
+        <div class="aayan-product-item">
+          <span class="aayan-product-name">${item.name} (x${item.quantity})</span>
+          <span class="aayan-product-price">Rs.${itemTotal.toFixed(2)}</span>
+        </div>
+      `;
+      productsContainer.insertAdjacentHTML('beforeend', cartItem);
+    });
+
+    // Update total amount
+    totalAmountElement.textContent = `Rs.${total.toFixed(2)}`;
+  }
+}
+
+// ==================== Input Restrictions and Validation ====================
+
+// Function to validate card number (only digits, max 12 characters)
+function validateCardNumber(input) {
+  const cardNumber = input.value.replace(/\D/g, ''); // Remove non-digits
+  input.value = cardNumber.slice(0, 12); // Limit to 12 digits
+  const errorElement = document.getElementById('aayan-card-number-error');
+  if (cardNumber.length !== 12) {
+    errorElement.textContent = 'Card number must be 12 digits.';
+    errorElement.style.display = 'block';
+    return false;
+  } else {
+    errorElement.style.display = 'none';
+    return true;
+  }
+}
+
+// Function to validate expiry date (MM/YY format)
+function validateExpiryDate(input) {
+  const expiryDate = input.value.replace(/\D/g, ''); // Remove non-digits
+  if (expiryDate.length >= 2) {
+    input.value = `${expiryDate.slice(0, 2)}/${expiryDate.slice(2, 4)}`; // Format as MM/YY
+  }
+  const errorElement = document.getElementById('aayan-expiry-error');
+  const isValid = /^\d{2}\/\d{2}$/.test(input.value); // Check MM/YY format
+  if (!isValid) {
+    errorElement.textContent = 'Expiry date must be in MM/YY format.';
+    errorElement.style.display = 'block';
+    return false;
+  } else {
+    errorElement.style.display = 'none';
+    return true;
+  }
+}
+
+// Function to validate CVV (only digits, max 3 characters)
+function validateCVV(input) {
+  const cvv = input.value.replace(/\D/g, ''); // Remove non-digits
+  input.value = cvv.slice(0, 3); // Limit to 3 digits
+  const errorElement = document.getElementById('aayan-cvv-error');
+  if (cvv.length !== 3) {
+    errorElement.textContent = 'CVV must be 3 digits.';
+    errorElement.style.display = 'block';
+    return false;
+  } else {
+    errorElement.style.display = 'none';
+    return true;
+  }
+}
+
+// Function to validate address (must not be empty)
+function validateAddress(input) {
+  const address = input.value.trim();
+  const errorElement = document.getElementById('aayan-address-error');
+  if (!address) {
+    errorElement.textContent = 'Address is required.';
+    errorElement.style.display = 'block';
+    return false;
+  } else {
+    errorElement.style.display = 'none';
+    return true;
+  }
+}
+
+// Function to check if all fields are valid
+function validateForm() {
+  const cardName = document.getElementById('aayan-card-name').value.trim();
+  const cardNumberValid = validateCardNumber(document.getElementById('aayan-card-number'));
+  const expiryDateValid = validateExpiryDate(document.getElementById('aayan-expiry'));
+  const cvvValid = validateCVV(document.getElementById('aayan-cvv'));
+  const addressValid = validateAddress(document.getElementById('aayan-address'));
+  const submitButton = document.querySelector('.aayan-submit-button');
+
+  if (cardName && cardNumberValid && expiryDateValid && cvvValid && addressValid) {
+    submitButton.disabled = false; // Enable submit button
+  } else {
+    submitButton.disabled = true; // Disable submit button
+  }
+}
+
 // ==================== Event Listeners ====================
 
 // Initialize when the DOM is loaded
@@ -165,6 +275,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Load cart from localStorage
   loadCartFromLocalStorage();
+
+  // Render checkout items if on the checkout page
+  if (window.location.pathname.includes('checkout.html')) {
+    renderCheckoutItems();
+
+    // Add event listeners for input validation
+    document.getElementById('aayan-card-number').addEventListener('input', (e) => {
+      validateCardNumber(e.target);
+      validateForm();
+    });
+
+    document.getElementById('aayan-expiry').addEventListener('input', (e) => {
+      validateExpiryDate(e.target);
+      validateForm();
+    });
+
+    document.getElementById('aayan-cvv').addEventListener('input', (e) => {
+      validateCVV(e.target);
+      validateForm();
+    });
+
+    document.getElementById('aayan-address').addEventListener('input', (e) => {
+      validateAddress(e.target);
+      validateForm();
+    });
+
+    document.getElementById('aayan-card-name').addEventListener('input', validateForm);
+
+    // Handle form submission on the checkout page
+    const checkoutForm = document.getElementById('aayan-checkout-form');
+    if (checkoutForm) {
+      checkoutForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        // alert('Order placed successfully!');
+        clearCartFromLocalStorage(); // Clear cart from localStorage
+        window.location.href = 'thank-you.html'; // Redirect to a thank you page
+      });
+    }
+  }
 
   // ==================== Navbar Scroll Effect ====================
   const navbar = document.getElementById('navbar');
