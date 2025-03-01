@@ -162,6 +162,17 @@ body {
   transform: scale(1.2);
 }
 
+.cart {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  font-size: 0.75rem;
+}
+
 .global-overlay-overlay {
   position: absolute;
   top: 0;
@@ -315,20 +326,88 @@ body {
 
 /* Featured Collection & Products */
 .featured-collection, .featured-products {
-  background: #fff;
+  background: #f8f9fa; /* Light background for contrast */
+  padding: 60px 0; /* Add padding for better spacing */
 }
 
 .featured-collection .card, .featured-products .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid grey;
-  border-radius: 10px;
+  border: 1px solid #ddd; /* Softer border color */
+  border-radius: 15px; /* Rounded corners */
   overflow: hidden;
+  background: #fff; /* White background for cards */
 }
 
 .featured-collection .card:hover, .featured-products .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
 
+.card-img-top {
+  border-bottom: 1px solid #ddd; /* Add a subtle border below the image */
+}
+
+.card-body {
+  padding: 20px; /* Add padding for better spacing */
+  text-align: center; /* Center align text */
+}
+
+.card-title {
+  font-size: 1.25rem; /* Larger title font size */
+  margin-bottom: 10px; /* Spacing below title */
+  color: #333; /* Darker text color */
+}
+
+.card-text {
+  font-size: 0.9rem; /* Slightly smaller text */
+  color: #666; /* Softer text color */
+  margin-bottom: 15px; /* Spacing above button */
+}
+
+/* Featured Products Button */
+.btn-primary {
+  background-color: #007bff; /* Bootstrap primary color */
+  border: none;
+  padding: 10px 20px; /* Button padding */
+  border-radius: 5px; /* Rounded button corners */
+  font-size: 0.9rem; /* Button text size */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Featured Collection Animated Link */
+.animated-link {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline */
+  font-weight: 600; /* Bold text */
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.animated-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #007bff; /* Underline color */
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0); /* Start with no width */
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.animated-link:hover {
+  color: #0056b3; /* Darker color on hover */
+}
+
+.animated-link:hover::after {
+  transform: scaleX(1); /* Full width on hover */
+  transform-origin: bottom left;
 }
 
 /* Owner Message */
@@ -395,339 +474,14 @@ body {
 
 .payment-icons i {
   font-size: 2rem;
-  margin-right: 10px;}
-/* }
-contact page css */
-
-
-.bimage {
-  background-image: url("pic1.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100vh;
-  width: 100%;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-right: 10px;
 }
-
-
-
-/* 
-
-.div1 {
-  color: white;
-  text-align: center;
-  max-width: 800px;
-  padding: 20px;
-  background-color: rgba(27, 27, 27, 0.6);
-  border-radius: 10px;
-}
- */
-h1 {
-  font-size: 4rem;
-  margin-bottom: 20px;
-}
-
-.icon-container {
-  transition: transform 0.3s ease;
-  background-color: #f8f9fa;
-  border-radius: 10px;
-  padding: 30px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.icon-container:hover {
-  transform: translateY(-5px);
-}
-
-.icon-wrapper {
-  margin-bottom: 20px;
-}
-
-.icon-wrapper svg {
-  width: 50px;
-  height: 50px;
-  color: #007bff;
-}
-
-h3 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-  color: #333;
-}
-
-.p1{
-  font-size: 1.1rem;
-  color: #666;
-  margin-bottom: 20px;
-}
-.p2 {
-  font-size: 1.1rem;
-  color: #666;
-  margin-bottom: 20px;
-}
-
-.phone-number a {
-  display: inline-block;
-  margin: 5px 0;
-  color: #007bff;
-  text-decoration: none;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
-}
-
-.phone-number a:hover {
-  color: #0056b3;
-}
-
-.p3 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin: 40px 0;
-  color: #333;
-}
-
-.map-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 40px;
-}
-
-iframe {
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 3rem;
-  }
-
-  p {
-    font-size: 1.2rem;
-  }
-
-  .p3 {
-    font-size: 2rem;
-  }
-}
-
-.animate-text {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s ease forwards;
-}
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.p4{
-  font-size: 2.5rem;
-  color: #333;
-  text-align:center ;
-}
-.map-container2 {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 40px 0;
-  margin-left: 20px;
-}
-
-.map-container2 iframe  {
-  width: 450px;
-  height: 450px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.info-box2 {
-  width: 200px;
-  height: 450px;
-  background-color: #f8f9fa;
-  border-radius: 10px;
-  border: 1px solid aliceblue ;
-  display: flex;
-  /* align-items: center;
-  justify-content: center; */
-  font-weight: bold;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-.info-box2 h3 {
-font-size: 35px;
-margin-bottom: 10px;
-}
-
-.info-box2 p {
-font-size: 20px;
-margin-bottom: 10px;
-}
-
-.info-box2 a {
-font-size: 20px;
-text-decoration: none;
-color: #007bff;
-}
-/* contact page cs end here */
-/* Page Name CSS ENDS HERE */
-
-.icon-container {
-  transition: transform 0.3s ease;
-  background-color: #f8f9fa;
-  border-radius: 10px;
-  padding: 30px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.icon-container:hover {
-  transform: translateY(-5px);
-}
-
-.icon-wrapper {
-  margin-bottom: 20px;
-}
-
-.icon-wrapper svg {
-  width: 50px;
-  height: 50px;
-  color: #007bff;
-}
-
-h3 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-  color: #333;
-}
-
-.p1{
-  font-size: 1.1rem;
-  color: #666;
-  margin-bottom: 20px;
-}
-.p2 {
-  font-size: 1.1rem;
-  color: #666;
-  margin-bottom: 20px;
-}
-
-.phone-number a {
-  display: inline-block;
-  margin: 5px 0;
-  color: #007bff;
-  text-decoration: none;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
-}
-
-.phone-number a:hover {
-  color: #0056b3;
-}
-
-.p3 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin: 40px 0;
-  color: #333;
-}
-
-.map-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 40px;
-}
-
-iframe {
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 3rem;
-  }
-
-  p {
-    font-size: 1.2rem;
-  }
-
-  .p3 {
-    font-size: 2rem;
-  }
-}
-
-.animate-text {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s ease forwards;
-}
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.p4{
-  font-size: 2.5rem;
-  color: #333;
-  text-align:center ;
-}
-.map-container2 {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 40px 0;
-  margin-left: 20px;
-}
-
-.map-container2 iframe  {
-  width: 450px;
-  height: 450px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.info-box2 {
-  width: 200px;
-  height: 450px;
-  background-color: #f8f9fa;
-  border-radius: 10px;
-  border: 1px solid aliceblue ;
-  display: flex;
-  /* align-items: center;
-  justify-content: center; */
-  font-weight: bold;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-.info-box2 h3 {
-font-size: 35px;
-margin-bottom: 10px;
-}
-
-.info-box2 p {
-font-size: 20px;
-margin-bottom: 10px;
-}
-
-.info-box2 a {
-font-size: 20px;
-text-decoration: none;
-color: #007bff;
-}
-
 
 /* contact page cs Starts here */
 
 .yahya-background-section {
   position: relative;
-  height: 100vh;
+  height: calc(100vh - 30px);
   background-image: url('imgs/pic1.jpg'); 
   background-size: cover;
   background-position: center;
@@ -1014,7 +768,7 @@ color: #007bff;
 
 .saad-background-section {
   position: relative;
-  height: 100vh;
+  height: calc(100vh - 30px);
   background-image: url('imgs/pic1.jpg'); /* Replace with your image */
   background-size: cover;
   background-position: center;
@@ -1068,7 +822,7 @@ color: #007bff;
 
 .wakas-background-section {
   position: relative;
-  height: 100vh;
+  height: calc(100vh - 30px);
   background-image: url('imgs/pic1.jpg'); /* Replace with your image */
   background-size: cover;
   background-position: center;
@@ -1229,7 +983,7 @@ section {
 
 .hussain-background-section {
   position: relative;
-  height: 100vh;
+  height: calc(100vh - 30px);
   background-image: url('imgs/pic1.jpg'); /* Replace with your image */
   background-size: cover;
   background-position: center;
