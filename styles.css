@@ -774,21 +774,30 @@ body {
   background-position: center;
 }
 
+/* Gallery item styling */
 .saad-gallery-item {
   position: relative;
   overflow: hidden;
-  border-radius: 10px; /* Optional: rounded corners */
+  border-radius: 15px; /* Slightly rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.saad-gallery-item:hover {
+  transform: translateY(-5px); /* Lift the item on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
 
 .saad-gallery-item img {
   width: 100%;
-  height: auto;
+  height: 250px; /* Fixed height for uniformity */
+  object-fit: cover; /* Ensure images cover the area without distortion */
   transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 
 .saad-gallery-item:hover img {
-  filter: blur(5px); /* Blur effect */
-  transform: scale(1.05); /* Slight zoom on hover */
+  filter: blur(3px); /* Subtle blur effect */
+  transform: scale(1.1); /* Slight zoom on hover */
 }
 
 /* Description styling */
@@ -798,23 +807,60 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  padding: 10px;
-  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background */
+  padding: 15px 20px;
+  border-radius: 10px;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   width: 90%;
   text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  backdrop-filter: blur(5px); /* Blurred background for the description */
 }
 
 .saad-gallery-item:hover .saad-description {
   opacity: 1; /* Show description on hover */
+  transform: translate(-50%, -50%) scale(1.05); /* Slight zoom on hover */
 }
 
-/* Optional: Style the container for the gallery */
+/* Gallery container styling */
 .saad-gallery-container {
   margin-top: 50px;
   margin-bottom: 50px;
+  padding: 20px;
+}
+
+/* Row and column spacing */
+.row {
+  margin: -10px; /* Adjust spacing between items */
+}
+
+.col {
+  padding: 10px; /* Spacing around each gallery item */
+}
+
+/* Optional: Add a gradient overlay to images */
+.saad-gallery-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.saad-gallery-item:hover::before {
+  opacity: 1; /* Show gradient overlay on hover */
+}
+
+/* Optional: Add a hover effect for the entire gallery item */
+.saad-gallery-item:hover {
+  cursor: pointer;
 }
 /* Gallery Page CSS Ends Here */
 
@@ -984,8 +1030,8 @@ section {
 .hussain-background-section {
   position: relative;
   height: calc(100vh - 30px);
-  background-image: url('imgs/pic1.jpg'); /* Replace with your image */
-  background-size: cover;
+  background-image: url('imgs/ProductsPageBg.jpg'); /* Replace with your image */
+  background-size: contain;
   background-position: center;
 }
 
