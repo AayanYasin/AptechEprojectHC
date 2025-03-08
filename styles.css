@@ -769,7 +769,7 @@ body {
 .saad-background-section {
   position: relative;
   height: calc(100vh - 30px);
-  background-image: url('imgs/pic1.jpg'); /* Replace with your image */
+  background-image: url('imgs/gallerybg.jpg'); /* Replace with your image */
   background-size: cover;
   background-position: center;
 }
@@ -823,7 +823,7 @@ body {
 .wakas-background-section {
   position: relative;
   height: calc(100vh - 30px);
-  background-image: url('imgs/pic1.jpg'); /* Replace with your image */
+  background-image: url('imgs/AboutUsBg.jpg'); /* Replace with your image */
   background-size: cover;
   background-position: center;
 }
